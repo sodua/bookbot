@@ -26,4 +26,5 @@ def count_chars(book_text):
     for dict2list in dict_values:
         list_of_sublists.append([value for value in dict2list.items()])
     for my_list in list_of_sublists:
-        print(f"{my_list[0][1]}: {my_list[1][1]}")
+        if my_list[0][1].isalpha():
+            print(f"{my_list[0][1]}: {my_list[1][1]}")
