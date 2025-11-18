@@ -21,4 +21,9 @@ def count_chars(book_text):
     dict_values = new_freq_dict.values()
     freq_list = list(dict_values)
     freq_list.sort(reverse=True, key=sort_on)
-    return(freq_list)
+    dict_values = list(freq_list)
+    list_of_sublists = []
+    for dict2list in dict_values:
+        list_of_sublists.append([value for value in dict2list.items()])
+    for my_list in list_of_sublists:
+        print(f"{my_list[0][1]}: {my_list[1][1]}")

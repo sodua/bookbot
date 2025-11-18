@@ -8,7 +8,5 @@ def get_book_text(path_to_file):
 def main():
     get_num_words(get_book_text("./books/frankenstein.txt"))
     sorted_list = count_chars(get_book_text("./books/frankenstein.txt"))
-    for freq_dict in sorted_list:
-        for key, value in freq_dict.items():
-            print(f"{key}: {value}")
+
 main()
