@@ -21,4 +21,4 @@ def count_chars(book_text):
     dict_values = new_freq_dict.values()
     freq_list = list(dict_values)
     freq_list.sort(reverse=True, key=sort_on)
-    print(freq_list)
+    return(freq_list)
